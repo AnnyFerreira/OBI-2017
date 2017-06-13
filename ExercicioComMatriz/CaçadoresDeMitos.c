@@ -1,29 +1,31 @@
 #include <stdio.h>
 #include <string.h>
 
-int main(void)
-{
-     int i,vr,a,b,resp =0;
-     int m[5][7];
-     memset(m,0,sizeof(m));
+ int main()
+ {
+ 	int i,j,vr,a,b,resp=0;
 
-     scanf("%d", &vr);
+   int m [5][7]
+   memset(m,0,35)
 
-for (i = 0; i < vr; i++)
-{
-	scanf("%d %d", &a,&b);
-	m[a][b]++;
+   scanf("%d",&vr)
+
+   for (i = 0; i < m[5]; ++i)
+   {
+     for (j = 0; j <m[7]; ++j)
+     {
+
+     scanf("%d %d", &a,&b);
+	 m[a][b]++;
 
 	if (m[a][b]>1)
 	{
 		resp =1;
 		break;
 	}
-	
-}
- printf("%d", resp);
-	
-	return 0;
-}
-
+		resp=0;
+     }
+   }
+ }
+  return 0
 
